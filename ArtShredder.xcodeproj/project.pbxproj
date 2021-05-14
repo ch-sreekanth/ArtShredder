@@ -40,8 +40,19 @@
 		37E47A5B2176EADB00C7E693 /* UIImage.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E47A5A2176EADB00C7E693 /* UIImage.extension.swift */; };
 		37E47A5D2176EB1000C7E693 /* Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E47A5C2176EB1000C7E693 /* Additional.swift */; };
 		37E47A5F2176EE7000C7E693 /* ARShredderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E47A5E2176EE7000C7E693 /* ARShredderNode.swift */; };
+		5E21D750264F17E500EEE0AC /* ArtShredderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E21D74F264F17E500EEE0AC /* ArtShredderUITests.swift */; };
 		719AE58EEDEC814482CE58CF /* Pods_ArtShredder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DD7BD236D6A68D7E549A88 /* Pods_ArtShredder.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E21D752264F17E500EEE0AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 375D3003216D15D700D5B953 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 375D300A216D15D700D5B953;
+			remoteInfo = ArtShredder;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		35DD7BD236D6A68D7E549A88 /* Pods_ArtShredder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtShredder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +94,9 @@
 		37E47A5C2176EB1000C7E693 /* Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Additional.swift; sourceTree = "<group>"; };
 		37E47A5E2176EE7000C7E693 /* ARShredderNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARShredderNode.swift; sourceTree = "<group>"; };
 		507343E919352EA6D8DC0C01 /* Pods-ArtShredder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtShredder.release.xcconfig"; path = "Target Support Files/Pods-ArtShredder/Pods-ArtShredder.release.xcconfig"; sourceTree = "<group>"; };
+		5E21D74D264F17E500EEE0AC /* ArtShredderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtShredderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E21D74F264F17E500EEE0AC /* ArtShredderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtShredderUITests.swift; sourceTree = "<group>"; };
+		5E21D751264F17E500EEE0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A7AB8C6A53CB22B19ED19E4 /* Pods-ArtShredder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtShredder.debug.xcconfig"; path = "Target Support Files/Pods-ArtShredder/Pods-ArtShredder.debug.xcconfig"; sourceTree = "<group>"; };
 		E23ECB61E3F35958CE94D891 /* Pods-ArtShredder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtShredder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArtShredder/Pods-ArtShredder.release.xcconfig"; sourceTree = "<group>"; };
 		E7FB9A715E858D56A1D48EDB /* Pods-ArtShredder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtShredder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArtShredder/Pods-ArtShredder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +111,13 @@
 				3715F4DB21C1668B005088D1 /* TheAnimation.framework in Frameworks */,
 				3715DEA22178FF0400885E84 /* Prex.framework in Frameworks */,
 				719AE58EEDEC814482CE58CF /* Pods_ArtShredder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E21D74A264F17E500EEE0AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				375D300D216D15D700D5B953 /* ArtShredder */,
+				5E21D74E264F17E500EEE0AC /* ArtShredderUITests */,
 				375D300C216D15D700D5B953 /* Products */,
 				1AF63382D1E27FE145A7E48B /* Pods */,
 				1BF0846AD1F6339F217DE70C /* Frameworks */,
@@ -139,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				375D300B216D15D700D5B953 /* ArtShredder.app */,
+				5E21D74D264F17E500EEE0AC /* ArtShredderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +253,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		5E21D74E264F17E500EEE0AC /* ArtShredderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E21D74F264F17E500EEE0AC /* ArtShredderUITests.swift */,
+				5E21D751264F17E500EEE0AC /* Info.plist */,
+			);
+			path = ArtShredderUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,18 +284,40 @@
 			productReference = 375D300B216D15D700D5B953 /* ArtShredder.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5E21D74C264F17E500EEE0AC /* ArtShredderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E21D756264F17E500EEE0AC /* Build configuration list for PBXNativeTarget "ArtShredderUITests" */;
+			buildPhases = (
+				5E21D749264F17E500EEE0AC /* Sources */,
+				5E21D74A264F17E500EEE0AC /* Frameworks */,
+				5E21D74B264F17E500EEE0AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E21D753264F17E500EEE0AC /* PBXTargetDependency */,
+			);
+			name = ArtShredderUITests;
+			productName = ArtShredderUITests;
+			productReference = 5E21D74D264F17E500EEE0AC /* ArtShredderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		375D3003216D15D700D5B953 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "marty-suzuki";
 				TargetAttributes = {
 					375D300A216D15D700D5B953 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					5E21D74C264F17E500EEE0AC = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 375D300A216D15D700D5B953;
 					};
 				};
 			};
@@ -282,6 +336,7 @@
 			projectRoot = "";
 			targets = (
 				375D300A216D15D700D5B953 /* ArtShredder */,
+				5E21D74C264F17E500EEE0AC /* ArtShredderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +353,13 @@
 				375D3016216D15D800D5B953 /* Assets.xcassets in Resources */,
 				37BB0CD52173142700C175EB /* InfoPlist.strings in Resources */,
 				378D64B02183741500908138 /* SettingViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E21D74B264F17E500EEE0AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +441,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E21D749264F17E500EEE0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E21D750264F17E500EEE0AC /* ArtShredderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E21D753264F17E500EEE0AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 375D300A216D15D700D5B953 /* ArtShredder */;
+			targetProxy = 5E21D752264F17E500EEE0AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		375D3017216D15D800D5B953 /* LaunchScreen.storyboard */ = {
@@ -577,6 +655,46 @@
 			};
 			name = Release;
 		};
+		5E21D754264F17E500EEE0AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPCBGR7A5C;
+				INFOPLIST_FILE = ArtShredderUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ch-sreekanth.artShredder.ArtShredderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArtShredder;
+			};
+			name = Debug;
+		};
+		5E21D755264F17E500EEE0AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JPCBGR7A5C;
+				INFOPLIST_FILE = ArtShredderUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ch-sreekanth.artShredder.ArtShredderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ArtShredder;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,6 +712,15 @@
 			buildConfigurations = (
 				375D301E216D15D800D5B953 /* Debug */,
 				375D301F216D15D800D5B953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E21D756264F17E500EEE0AC /* Build configuration list for PBXNativeTarget "ArtShredderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E21D754264F17E500EEE0AC /* Debug */,
+				5E21D755264F17E500EEE0AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
