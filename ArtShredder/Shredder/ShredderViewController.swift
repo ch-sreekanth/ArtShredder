@@ -24,6 +24,7 @@ final class ShredderViewController: UIViewController {
             selectImageButton.imageView?.contentMode = .scaleAspectFit
             selectImageButton.contentHorizontalAlignment = .fill
             selectImageButton.contentVerticalAlignment = .fill
+            selectImageButton.accessibilityIdentifier = imageName
         }
     }
     @IBOutlet private(set) weak var saveImageButton: UIButton! {
@@ -31,6 +32,7 @@ final class ShredderViewController: UIViewController {
             saveImageButton.isEnabled = false
             let title = LocalizedString.saveImageButton
             saveImageButton.setTitle(title, for: .normal)
+            saveImageButton.accessibilityIdentifier = title
         }
     }
     @IBOutlet private(set) weak var saveGifButton: UIButton! {
@@ -38,12 +40,14 @@ final class ShredderViewController: UIViewController {
             saveGifButton.isEnabled = false
             let title = LocalizedString.saveGIFButton
             saveGifButton.setTitle(title, for: .normal)
+            saveGifButton.accessibilityIdentifier = title
         }
     }
     @IBOutlet private(set) weak var arButton: UIButton! {
         didSet {
             let title = LocalizedString.arModeTitle
             arButton.setTitle(title, for: .normal)
+            arButton.accessibilityIdentifier = title
         }
     }
 
@@ -51,6 +55,7 @@ final class ShredderViewController: UIViewController {
         didSet {
             indicatorView.isHidden = true
             indicatorView.stopAnimating()
+            indicatorView.accessibilityIdentifier = "IndicatorView"
         }
     }
 
