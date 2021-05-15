@@ -23,8 +23,9 @@ class ArtShredderBaseUITests: XCTestCase {
     
     @discardableResult
     func artShredderLandingScreen() -> LandingPage {
+        
         app.launch()
-        _ = app.element(matchingIdentifier: AXLandingScreen.ARModeButton).waitForExistence(timeout: 10)
+        XCTAssertTrue(app.element(matchingIdentifier: AXLandingScreen.ARModeButton).exists, "Page Load Issue")
         return LandingPage()
     }
     

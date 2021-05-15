@@ -33,6 +33,7 @@ final class SettingViewController: UIViewController {
         super.viewDidLoad()
 
         navigationItem.leftBarButtonItem = doneButton
+        navigationItem.leftBarButtonItem?.accessibilityIdentifier = "SettingsPage.DoneButon"
 
         presenter.reflect()
     }

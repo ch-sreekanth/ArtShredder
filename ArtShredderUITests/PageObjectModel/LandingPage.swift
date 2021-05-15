@@ -26,14 +26,14 @@ class LandingPage {
     //
     
     @discardableResult
-    func tapMoreInfoButton() -> LandingPage {
+    func tapMoreInfoButton() -> SettingsPage {
         
         if moreInfoButton.waitForExistence(timeout: 3) && moreInfoButton.isHittable {
             moreInfoButton.tap()
         } else {
             XCTFail("Unable to tap More Info Button")
         }
-        return self
+        return SettingsPage()
     }
     
     @discardableResult
@@ -53,54 +53,72 @@ class LandingPage {
     
     @discardableResult
     func assertMoreInfoButton(exists: Bool) -> LandingPage {
+        
+        _ = moreInfoButton.waitForExistence(timeout: 3)
         XCTAssertEqual(moreInfoButton.exists, exists, "More Info Button does not exist")
         return self
     }
     
     @discardableResult
     func assertSaveAsGifButton(exists: Bool) -> LandingPage {
+        
+        _ = saveAsGIFButton.waitForExistence(timeout: 3)
         XCTAssertEqual(saveAsGIFButton.exists, exists, "Save As GIF Button does not exist")
         return self
     }
     
     @discardableResult
     func assertSaveAsImageButton(exists: Bool) -> LandingPage {
+        
+        _ = saveAsImageButton.waitForExistence(timeout: 3)
         XCTAssertEqual(saveAsImageButton.exists, exists, "Save As Image Button does not exist")
         return self
     }
     
     @discardableResult
     func assertARModeButton(exists: Bool) -> LandingPage {
+        
+        _ = aRModeButton.waitForExistence(timeout: 3)
         XCTAssertEqual(aRModeButton.exists, exists, "AR Mode Button does not exist")
         return self
     }
     
     @discardableResult
     func assertSelectToAddArtWindow(exists: Bool) -> LandingPage {
+        
+        _ = selectToAddArtWindow.waitForExistence(timeout: 3)
         XCTAssertEqual(selectToAddArtWindow.exists, exists, "Select To Add Art Window does not exist")
         return self
     }
     
     @discardableResult
     func assertARModeButton(isEnabled: Bool) -> LandingPage {
+        
+        _ = aRModeButton.waitForExistence(timeout: 3)
         XCTAssertEqual(aRModeButton.isEnabled, isEnabled, "Mismatch in AR Mode Button enable/disable")
         return self
     }
     
     @discardableResult
     func assertSaveAsGifButton(isEnabled: Bool) -> LandingPage {
+        
+        _ = saveAsGIFButton.waitForExistence(timeout: 3)
         XCTAssertEqual(saveAsGIFButton.isEnabled, isEnabled, "Mismatch in Save As GIF Button enable/disable")
         return self
     }
     
     @discardableResult
     func assertSaveAsImageButton(isEnabled: Bool) -> LandingPage {
+        
+        _ = saveAsImageButton.waitForExistence(timeout: 3)
         XCTAssertEqual(saveAsImageButton.isEnabled, isEnabled, "Mismatch in Save As Image Button enable/disable")
         return self
     }
     
     @discardableResult
     func assertMoreInfoButton(isHittable: Bool) -> LandingPage {
+        
+        _ = moreInfoButton.waitForExistence(timeout: 3)
         XCTAssertEqual(moreInfoButton.isHittable, isHittable, "Mismatch in hittability of More Info Button")
         return self
     }
