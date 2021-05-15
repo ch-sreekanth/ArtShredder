@@ -11,4 +11,5 @@ import Foundation
 public enum AXSettingsPage {
 
     public static let DoneButton = "SettingsPage.DoneButon"
+    public static let NavigationHeader = "ArtShredder.SettingView"
 }

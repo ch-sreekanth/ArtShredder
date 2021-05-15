@@ -48,6 +48,12 @@
 		5EA36E8D2650776E00B94AB9 /* AXSettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E8C2650776E00B94AB9 /* AXSettingsPage.swift */; };
 		5EA36E8F265077E500B94AB9 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E8E265077E500B94AB9 /* SettingsPage.swift */; };
 		5EA36E912650781100B94AB9 /* ValidateSettingsPageAndBackToLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E902650781100B94AB9 /* ValidateSettingsPageAndBackToLandingPage.swift */; };
+		5EA36E932650789C00B94AB9 /* AXMomentsPhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E922650789C00B94AB9 /* AXMomentsPhotoCollectionView.swift */; };
+		5EA36E95265078C100B94AB9 /* AXPhotoLibraryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E94265078C100B94AB9 /* AXPhotoLibraryPage.swift */; };
+		5EA36E97265078FF00B94AB9 /* ArtShredderPageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E96265078FF00B94AB9 /* ArtShredderPageObject.swift */; };
+		5EA36E992650795300B94AB9 /* MomentsPhotoCollectionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E982650795300B94AB9 /* MomentsPhotoCollectionPage.swift */; };
+		5EA36E9B2650798000B94AB9 /* PhotoLibraryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E9A2650798000B94AB9 /* PhotoLibraryPage.swift */; };
+		5EA36E9D265079E200B94AB9 /* VerifyImageSelectionToShred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E9C265079E200B94AB9 /* VerifyImageSelectionToShred.swift */; };
 		719AE58EEDEC814482CE58CF /* Pods_ArtShredder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35DD7BD236D6A68D7E549A88 /* Pods_ArtShredder.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +117,12 @@
 		5EA36E8C2650776E00B94AB9 /* AXSettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXSettingsPage.swift; sourceTree = "<group>"; };
 		5EA36E8E265077E500B94AB9 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		5EA36E902650781100B94AB9 /* ValidateSettingsPageAndBackToLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSettingsPageAndBackToLandingPage.swift; sourceTree = "<group>"; };
+		5EA36E922650789C00B94AB9 /* AXMomentsPhotoCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXMomentsPhotoCollectionView.swift; sourceTree = "<group>"; };
+		5EA36E94265078C100B94AB9 /* AXPhotoLibraryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXPhotoLibraryPage.swift; sourceTree = "<group>"; };
+		5EA36E96265078FF00B94AB9 /* ArtShredderPageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtShredderPageObject.swift; sourceTree = "<group>"; };
+		5EA36E982650795300B94AB9 /* MomentsPhotoCollectionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsPhotoCollectionPage.swift; sourceTree = "<group>"; };
+		5EA36E9A2650798000B94AB9 /* PhotoLibraryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPage.swift; sourceTree = "<group>"; };
+		5EA36E9C265079E200B94AB9 /* VerifyImageSelectionToShred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyImageSelectionToShred.swift; sourceTree = "<group>"; };
 		8A7AB8C6A53CB22B19ED19E4 /* Pods-ArtShredder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtShredder.debug.xcconfig"; path = "Target Support Files/Pods-ArtShredder/Pods-ArtShredder.debug.xcconfig"; sourceTree = "<group>"; };
 		E23ECB61E3F35958CE94D891 /* Pods-ArtShredder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtShredder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArtShredder/Pods-ArtShredder.release.xcconfig"; sourceTree = "<group>"; };
 		E7FB9A715E858D56A1D48EDB /* Pods-ArtShredder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtShredder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArtShredder/Pods-ArtShredder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -276,6 +288,7 @@
 				5E21D74F264F17E500EEE0AC /* ArtShredderBaseUITests.swift */,
 				5E21D751264F17E500EEE0AC /* Info.plist */,
 				5EA36E8A265076BE00B94AB9 /* XCUIApplication+Additions.swift */,
+				5EA36E96265078FF00B94AB9 /* ArtShredderPageObject.swift */,
 			);
 			path = ArtShredderUITests;
 			sourceTree = "<group>";
@@ -285,6 +298,8 @@
 			children = (
 				5EA36E812650752F00B94AB9 /* AXLandingScreen.swift */,
 				5EA36E8C2650776E00B94AB9 /* AXSettingsPage.swift */,
+				5EA36E922650789C00B94AB9 /* AXMomentsPhotoCollectionView.swift */,
+				5EA36E94265078C100B94AB9 /* AXPhotoLibraryPage.swift */,
 			);
 			path = AccessibilityIdentifiers;
 			sourceTree = "<group>";
@@ -294,6 +309,8 @@
 			children = (
 				5EA36E842650761200B94AB9 /* LandingPage.swift */,
 				5EA36E8E265077E500B94AB9 /* SettingsPage.swift */,
+				5EA36E982650795300B94AB9 /* MomentsPhotoCollectionPage.swift */,
+				5EA36E9A2650798000B94AB9 /* PhotoLibraryPage.swift */,
 			);
 			path = PageObjectModel;
 			sourceTree = "<group>";
@@ -303,6 +320,7 @@
 			children = (
 				5EA36E872650766400B94AB9 /* VerifyLandingScreen.swift */,
 				5EA36E902650781100B94AB9 /* ValidateSettingsPageAndBackToLandingPage.swift */,
+				5EA36E9C265079E200B94AB9 /* VerifyImageSelectionToShred.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -492,11 +510,17 @@
 			files = (
 				5EA36E822650752F00B94AB9 /* AXLandingScreen.swift in Sources */,
 				5E21D750264F17E500EEE0AC /* ArtShredderBaseUITests.swift in Sources */,
+				5EA36E95265078C100B94AB9 /* AXPhotoLibraryPage.swift in Sources */,
 				5EA36E912650781100B94AB9 /* ValidateSettingsPageAndBackToLandingPage.swift in Sources */,
 				5EA36E892650767300B94AB9 /* LandingPage.swift in Sources */,
+				5EA36E932650789C00B94AB9 /* AXMomentsPhotoCollectionView.swift in Sources */,
+				5EA36E992650795300B94AB9 /* MomentsPhotoCollectionPage.swift in Sources */,
+				5EA36E9D265079E200B94AB9 /* VerifyImageSelectionToShred.swift in Sources */,
+				5EA36E9B2650798000B94AB9 /* PhotoLibraryPage.swift in Sources */,
 				5EA36E8B265076BE00B94AB9 /* XCUIApplication+Additions.swift in Sources */,
 				5EA36E8D2650776E00B94AB9 /* AXSettingsPage.swift in Sources */,
 				5EA36E8F265077E500B94AB9 /* SettingsPage.swift in Sources */,
+				5EA36E97265078FF00B94AB9 /* ArtShredderPageObject.swift in Sources */,
 				5EA36E882650766400B94AB9 /* VerifyLandingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

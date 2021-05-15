@@ -9,16 +9,20 @@
 import Foundation
 import XCTest
 
-class LandingPage {
+class LandingPage: ArtShredderPageObject {
+    
+    override var isDesiredPage: Bool {
+        return app.buttons.matching(identifier: AXLandingScreen.MoreInfoButton).element.waitForExistence(timeout: 3)
+    }
     
     //
     // MARK: Elements
     //
     
-    private var moreInfoButton: XCUIElement { return app.buttons["More Info"]}
+    private var moreInfoButton: XCUIElement { return app.buttons.matching(identifier: AXLandingScreen.MoreInfoButton).element }
     private var saveAsGIFButton: XCUIElement { return app.element(matchingIdentifier: AXLandingScreen.SaveAsGIFButton)}
     private var saveAsImageButton: XCUIElement { return app.element(matchingIdentifier: AXLandingScreen.SaveAsImageButton)}
-    private var aRModeButton: XCUIElement { return app.element(matchingIdentifier: AXLandingScreen.ARModeButton)}
+    var aRModeButton: XCUIElement { return app.element(matchingIdentifier: AXLandingScreen.ARModeButton)}
     private var selectToAddArtWindow: XCUIElement { return app.element(matchingIdentifier: AXLandingScreen.selectToAddArtWindow)}
     
     //
@@ -37,14 +41,15 @@ class LandingPage {
     }
     
     @discardableResult
-    func tapSelectToAddArtWindow() -> LandingPage {
+    func tapSelectToAddArtWindow() -> PhotoLibraryPage {
         
         if selectToAddArtWindow.waitForExistence(timeout: 3) && selectToAddArtWindow.isHittable {
             selectToAddArtWindow.tap()
         } else {
             XCTFail("Unable to tap Select To Add Art Window")
         }
-        return self
+        _ = PhotoLibraryPage().cancelButton.waitForExistence(timeout: 10)
+        return PhotoLibraryPage()
     }
     
     //
@@ -120,6 +125,15 @@ class LandingPage {
         
         _ = moreInfoButton.waitForExistence(timeout: 3)
         XCTAssertEqual(moreInfoButton.isHittable, isHittable, "Mismatch in hittability of More Info Button")
+        return self
+    }
+    
+    @discardableResult
+    func assertShredingComplete() -> LandingPage {
+        
+        while !saveAsGIFButton.isEnabled || !saveAsImageButton.isEnabled {
+            sleep(2)
+        }
         return self
     }
     

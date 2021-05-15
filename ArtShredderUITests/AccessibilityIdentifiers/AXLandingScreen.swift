@@ -10,6 +10,7 @@ import Foundation
 
 public enum AXLandingScreen {
 
+    public static let MoreInfoButton = "More Info"
     public static let SaveAsGIFButton = "Save as GIF"
     public static let SaveAsImageButton = "Save as Image"
     public static let ARModeButton = "AR Mode"
