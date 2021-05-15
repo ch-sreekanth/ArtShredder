@@ -190,6 +190,7 @@ final class ShredderViewController: UIViewController {
                 self?.saveFinishedAlert()
             }
         }
+        controller.popoverPresentationController?.sourceView?.accessibilityIdentifier = "SaveImage.Popover"
         present(controller, animated: true, completion: nil)
     }
 
@@ -197,6 +198,8 @@ final class ShredderViewController: UIViewController {
         let title = LocalizedString.didSaveToCameraRollTitle
         let message = LocalizedString.didSaveToCameraRollMessage
         let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        alert.view.accessibilityIdentifier = title
+        
         if traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .regular {
             let rect = CGRect(x: view.center.x,
                               y: containerView.frame.minY,

@@ -49,6 +49,7 @@ class MomentsPhotoCollectionPage: ArtShredderPageObject {
         return LandingPage()
     }
     
+    /// Select an image by its index
     @discardableResult
     func selectImageToShredAt(cellIndex: Int) -> LandingPage {
         

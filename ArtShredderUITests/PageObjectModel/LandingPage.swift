@@ -52,6 +52,17 @@ class LandingPage: ArtShredderPageObject {
         return PhotoLibraryPage()
     }
     
+    @discardableResult
+     func tapSaveAsImageButton() -> SaveImagePopoverView {
+
+         if saveAsImageButton.waitForExistence(timeout: 3) && saveAsImageButton.isHittable {
+             saveAsImageButton.tap()
+         } else {
+             XCTFail("Unable to tap Save As Image button")
+         }
+         return SaveImagePopoverView()
+     }
+
     //
     // MARK: Assertions
     //
@@ -128,6 +139,7 @@ class LandingPage: ArtShredderPageObject {
         return self
     }
     
+    /// This function also waits for the animation to complete
     @discardableResult
     func assertShredingComplete() -> LandingPage {
         

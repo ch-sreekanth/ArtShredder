@@ -7,9 +7,23 @@
 //
 
 import Foundation
+import XCTest
 
 class ArtShredderPageObject {
 
     public var isDesiredPage: Bool { return false}
 
+}
+
+class HandleSystemAlert: XCTestCase {
+    
+    public func dismissSystemAlert() {
+        
+        addUIInterruptionMonitor(withDescription: "System Dialog") {
+            (alert) -> Bool in
+            alert.buttons["OK"].tap()
+            return true
+        }
+        app.tap()
+    }
 }
