@@ -75,4 +75,12 @@ class SaveImagePopoverView: ArtShredderPageObject {
         return self
     }
     
+    @discardableResult
+    func assertShreddedArtFormatAsImage() -> SaveImagePopoverView {
+        
+        XCTAssertTrue(!app.staticTexts["GIF Image"].exists, "Unexpected GIF format is shown while saving image")
+        return self
+    }
+    
 }
+

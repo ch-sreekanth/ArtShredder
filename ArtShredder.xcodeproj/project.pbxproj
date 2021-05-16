@@ -41,6 +41,7 @@
 		37E47A5D2176EB1000C7E693 /* Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E47A5C2176EB1000C7E693 /* Additional.swift */; };
 		37E47A5F2176EE7000C7E693 /* ARShredderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E47A5E2176EE7000C7E693 /* ARShredderNode.swift */; };
 		5E21D750264F17E500EEE0AC /* ArtShredderBaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E21D74F264F17E500EEE0AC /* ArtShredderBaseUITests.swift */; };
+		5E7FC9A226516532008D1F39 /* VerifyArtFormatBeforeSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7FC9A126516532008D1F39 /* VerifyArtFormatBeforeSaving.swift */; };
 		5EA36E822650752F00B94AB9 /* AXLandingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E812650752F00B94AB9 /* AXLandingScreen.swift */; };
 		5EA36E882650766400B94AB9 /* VerifyLandingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E872650766400B94AB9 /* VerifyLandingScreen.swift */; };
 		5EA36E892650767300B94AB9 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA36E842650761200B94AB9 /* LandingPage.swift */; };
@@ -118,6 +119,7 @@
 		5E21D74D264F17E500EEE0AC /* ArtShredderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtShredderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E21D74F264F17E500EEE0AC /* ArtShredderBaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtShredderBaseUITests.swift; sourceTree = "<group>"; };
 		5E21D751264F17E500EEE0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E7FC9A126516532008D1F39 /* VerifyArtFormatBeforeSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyArtFormatBeforeSaving.swift; sourceTree = "<group>"; };
 		5EA36E812650752F00B94AB9 /* AXLandingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXLandingScreen.swift; sourceTree = "<group>"; };
 		5EA36E842650761200B94AB9 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		5EA36E872650766400B94AB9 /* VerifyLandingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyLandingScreen.swift; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				5EA36E9C265079E200B94AB9 /* VerifyImageSelectionToShred.swift */,
 				5EA36EA226507A8800B94AB9 /* VerifyImageSelectionToShredFromAllPhotos.swift */,
 				5EA36EAC26507CC700B94AB9 /* VerifySaveAsImageFlow.swift */,
+				5E7FC9A126516532008D1F39 /* VerifyArtFormatBeforeSaving.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA36E822650752F00B94AB9 /* AXLandingScreen.swift in Sources */,
+				5E7FC9A226516532008D1F39 /* VerifyArtFormatBeforeSaving.swift in Sources */,
 				5E21D750264F17E500EEE0AC /* ArtShredderBaseUITests.swift in Sources */,
 				5EA36E95265078C100B94AB9 /* AXPhotoLibraryPage.swift in Sources */,
 				5EA36EAB26507C7A00B94AB9 /* SaveImagePopoverView.swift in Sources */,
